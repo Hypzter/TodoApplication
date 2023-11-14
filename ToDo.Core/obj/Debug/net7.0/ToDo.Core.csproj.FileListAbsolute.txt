@@ -1,0 +1,14 @@
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\bin\Debug\net7.0\ToDo.Core.exe
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\bin\Debug\net7.0\ToDo.Core.deps.json
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\bin\Debug\net7.0\ToDo.Core.runtimeconfig.json
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\bin\Debug\net7.0\ToDo.Core.dll
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\bin\Debug\net7.0\ToDo.Core.pdb
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\ToDo.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\ToDo.Core.AssemblyInfoInputs.cache
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\ToDo.Core.AssemblyInfo.cs
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\ToDo.Core.csproj.CoreCompileInputs.cache
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\ToDo.Core.dll
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\refint\ToDo.Core.dll
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\ToDo.Core.pdb
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\ToDo.Core.genruntimeconfig.cache
+C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\ToDo.Core\obj\Debug\net7.0\ref\ToDo.Core.dll
