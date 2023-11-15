@@ -138,25 +138,25 @@ namespace ToDo.Tests
             Assert.Equal(expected, actual);
         }
 
-        //[Fact]
-        //public void GetInputKeepsTryingOnEmpty()
-        //{
-        //    // Arrange
-        //    var mock = new Mock<IConsoleWrapper>();
-        //    var expected = "Daniel";
-        //    mock.SetupSequence(x => x.ReadLine())
-        //        .Returns("")
-        //        .Returns("")
-        //        .Returns("")
-        //        .Returns(expected);
-        //    var sut = new UserInteraction(mock.Object);
+        [Fact]
+        public void GetInputKeepsTryingOnEmpty()
+        {
+            // Arrange
+            var mock = new Mock<IConsoleWrapper>();
+            var expected = "Christofer";
+            mock.SetupSequence(x => x.ReadLine())
+                .Returns("")
+                .Returns("")
+                .Returns("")
+                .Returns(expected);
+            var sut = new UserInteraction(mock.Object);
 
-        //    // Act
-        //    var actual = sut.GetInput("Vad heter du?");
+            // Act
+            var actual = sut.GetInput("Vad heter du?");
 
-        //    // Assert
-        //    Assert.Equal(expected, actual);
-        //    mock.Verify(x => x.ReadLine(), Times.Exactly(4));
-        //}
+            // Assert
+            Assert.Equal(expected, actual);
+            mock.Verify(x => x.ReadLine(), Times.Exactly(4));
+        }
     }
 }

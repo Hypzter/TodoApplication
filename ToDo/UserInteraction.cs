@@ -23,13 +23,20 @@ namespace Todo.Cli
 
         public string GetInput(string prompt)
         {
+            string input = null;
+
             consoleWrapper.WriteLine(prompt);
-            var input = consoleWrapper.ReadLine();
 
-            // skitdålig felhantering, todo: fix
-            if (input is null)
-                throw new ArgumentNullException("Dåligt...");
+            while (string.IsNullOrWhiteSpace(input))
+            {
+                input = consoleWrapper.ReadLine();
 
+                if (string.IsNullOrWhiteSpace(input))
+                {
+                    consoleWrapper.WriteLine("Incorrect input, please try again");
+                    consoleWrapper.WriteLine(prompt);
+                }
+            }
             return input;
         }
     }
