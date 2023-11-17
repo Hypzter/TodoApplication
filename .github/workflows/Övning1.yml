@@ -1,0 +1,23 @@
+name: Practice 1
+
+on:
+  workflow_dispatch:
+    inputs:
+      succeed_if_number_over_7:
+        description: "Enter a number"
+        required: true
+        type: number
+        default: '3'
+        
+jobs:
+  the-number-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: a number over 7 was passed in "succeed_if_number_over_7"
+        if: inputs.succeed_if_number_over_7 > 7
+        run: echo "you are above 7!! :)"
+
+      - name: a number under 7 was passed in "succeed_if_number_over_7"
+        if: inputs.succeed_if_number_over_7 =< 7
+        run: echo "you are under 7!! :("
+    
