@@ -1,6 +1,6 @@
 name: Build on Different .NET Versions and Linux
 
-on: workflow_dispatch
+on: push
 
 
 jobs:
@@ -17,10 +17,10 @@ jobs:
           version: ${{matrix.version}}
 
       - name: Restore dependencies
-        run: dotnet restore ./Todo.Tests/Todo.Tests/Csproj
+        run: dotnet restore ./Todo.Tests/Todo.Tests.csproj
   
       - name: Build
-        run: dotnet build ./Todo.Tests/Todo.Tests/Csproj --no-restore
+        run: dotnet build ./Todo.Tests/Todo.Tests.csproj --no-restore
   
       - name: Run tests 
-        run: dotnet test ./Todo.Tests/Todo.Tests/Csproj --no-build --logger "html" --results-directory "test_results"
+        run: dotnet test ./Todo.Tests/Todo.Tests.csproj --no-build --logger "html" --results-directory "test_results"
