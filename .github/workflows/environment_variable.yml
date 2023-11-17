@@ -1,0 +1,21 @@
+name: Environment Variables Workflow
+
+on:
+  workflow_dispatch:
+
+env:
+  WORKFLOW_VARIABLE: "This is a workflow environment variable"
+
+jobs:
+  simple-job:
+    runs-on: ubuntu-latest
+    env:
+      JOB_VARIABLE: "This is a job environment variable"
+    steps:
+    - name: Step with environment variable
+      env:
+        STEP_VARIABLE: "This is a step environment variable"
+      run: |
+        echo "Workflow environment variable: $WORKFLOW_VARIABLE"
+        echo "Job environment variable: $JOB_VARIABLE"
+        echo "Step environment variable: $STEP_VARIABLE"
