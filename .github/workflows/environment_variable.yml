@@ -8,7 +8,7 @@ env:
 
 jobs:
   simple-job:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     env:
       JOB_VARIABLE: "This is a job environment variable"
     steps:
