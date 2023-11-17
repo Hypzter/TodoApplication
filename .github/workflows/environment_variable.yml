@@ -19,3 +19,6 @@ jobs:
         echo "Workflow environment variable: $WORKFLOW_VARIABLE"
         echo "Job environment variable: $JOB_VARIABLE"
         echo "Step environment variable: $STEP_VARIABLE"
+        
+        echo "Printing all environment variables..."
+        printenv
