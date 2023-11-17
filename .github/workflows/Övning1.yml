@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: a number over 7 was passed in "succeed_if_number_over_7"
-        if: inputs.succeed_if_number_over_7 > 7
+        if: inputs.succeed_if_number_over_7 > '7'
         run: echo "you are above 7!! :)"
 
       - name: a number under 7 was passed in "succeed_if_number_over_7"
-        if: inputs.succeed_if_number_over_7 =< 7
+        if: inputs.succeed_if_number_over_7 < '7'
         run: echo "you are under 7!! :("
     
