@@ -17,10 +17,10 @@ jobs:
           version: ${{matrix.version}}
 
       - name: Restore dependencies
-        run: dotnet restore ./ToDo.Tests/ToDo.Tests.csproj
+        run: dotnet restore
   
       - name: Build
-        run: dotnet build ./ToDo.Tests/ToDo.Tests.csproj --no-restore
+        run: dotnet build --no-restore
   
       - name: Run tests 
-        run: dotnet test ./ToDo.Tests/ToDo.Tests.csproj --no-build --logger "html" --results-directory "test_results"
+        run: dotnet test --no-build --logger "html" --results-directory "test_results"
