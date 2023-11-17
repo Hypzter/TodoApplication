@@ -2,25 +2,25 @@ name: Build on Different .NET Versions and Linux
 
 on: push
 
-
 jobs:
-  build: 
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         dotnet-version: [8.0, 7.0, 6.0]
-        
+
     steps:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
-        with: 
-          version: ${{matrix.version}}
+        with:
+          version: ${{matrix.dotnet-version}}
 
       - name: Restore dependencies
         run: dotnet restore
-  
+
       - name: Build
         run: dotnet build --no-restore
-  
-      - name: Run tests 
+
+      - name: Run tests
         run: dotnet test --no-build --logger "html" --results-directory "test_results"
+
