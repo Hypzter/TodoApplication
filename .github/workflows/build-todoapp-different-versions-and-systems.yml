@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [ubuntu-latest, windows-latest]
         version: [8.0, 7.0, 6.0]
     steps:
       - name: Setup .NET
@@ -17,10 +17,10 @@ jobs:
           version: ${{matrix.version}}
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore ./Todo.Tests/Todo.Tests/Csproj
   
       - name: Build
-        run: dotnet build --configuration Release
+        run: dotnet build ./Todo.Tests/Todo.Tests/Csproj --no-restore
   
-      - name: Run tests
-        run: dotnet test
+      - name: Run tests 
+        run: dotnet test ./Todo.Tests/Todo.Tests/Csproj --no-build --logger "html" --results-directory "test_results"
