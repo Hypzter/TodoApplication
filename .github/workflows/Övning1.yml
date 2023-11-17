@@ -6,8 +6,6 @@ on:
       succeed_if_number_over_7:
         description: "Enter a number"
         required: true
-        type: number
-        default: '3'
         
 jobs:
   the-number-job:
@@ -21,8 +19,11 @@ jobs:
         shell: bash
         run: |
           echo "Hello, I may fail"
-          if [ ${{ 'inputs.succeed_if_number_over_7' }} -lt '7' ]; then
+          if [ "${{ inputs.succeed_if_number_over_7 }}" -lt 7 ]; then
+          echo "Numret är mindre än 7. Avbryt jobbet."
             exit 42
+          else
+          echo "Numret är 7 eller större. Kör jobbet."
           fi
       
     
