@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Run reminder script
         run: |
-          bash .\birthday_reminder
+          bash C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\birthday_reminder
