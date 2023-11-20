@@ -2,7 +2,7 @@ name: Reminder
 
 on: 
   schedule:
-    - cron: '30 * * * *'
+    - cron: 
 
 jobs:
   birthday-reminder:
