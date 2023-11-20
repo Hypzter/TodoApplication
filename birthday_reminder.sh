@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ange ditt födelsedatum
-birthday="2023-11-20"
+birthday="2023-11-21"
 
 # Hämta dagens datum
 current_date=$(date +%Y-%m-%d)
