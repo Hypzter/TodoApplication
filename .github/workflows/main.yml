@@ -1,8 +1,6 @@
 name: Reminder
 
-on:
-  schedule: 
-    - cron: '*/1 11 * 11 1'
+on: workflow_dispatch
 
 jobs:
   birthday-reminder:
