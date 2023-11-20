@@ -1,0 +1,16 @@
+name: Count Lines of Code
+
+on: workflow_dispatch
+
+jobs:
+  count-lines:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Count Lines of Code
+      run: |
+        echo "Lines of code: $(find . -name '*.py' -o -name '*.js' -o -name '*.java' -o -name '*.cs' | xargs cat | wc -l)"
+
