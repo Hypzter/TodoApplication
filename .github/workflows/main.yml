@@ -13,4 +13,4 @@ jobs:
     
       - name: Run reminder script
         run: |
-          bash C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\birthday_reminder
+          bash .\birthday_reminder
