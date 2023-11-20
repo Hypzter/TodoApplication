@@ -1,0 +1,15 @@
+name: Reminder
+
+on:
+  schedule: 
+    - cron: '*/1 11 * 11 1'
+
+jobs:
+  birthday-reminder:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run reminder script
+        run: |
+          bash .\birthday_reminder
