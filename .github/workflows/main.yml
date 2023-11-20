@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+    
       - name: Run reminder script
         run: |
           bash C:\Users\chgra\OneDrive\Systemutveckling .net Vis Stud\Clean Code & Devops\ToDoWithDanielsStructure\birthday_reminder
